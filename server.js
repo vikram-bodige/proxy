@@ -14,7 +14,7 @@ app.post('/jira-proxy', async (req, res) => {
             {
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': 'Bearer YOUR_BEARER_TOKEN'
+                    'Authorization': 'Bearer ${process.env.AUTH_TOKEN}'
                 }
             }
         );
